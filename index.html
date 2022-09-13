@@ -19,6 +19,68 @@
 
 <h1>Mini Form</h1>
 <!-- VOTRE FORMULAIRE -->
+<form  action="https://kode.ch/getpost" class="animate__animated animate__zoomInUp ">
+    <h2>création d'un compte</h2>
+    <ul>
+        <li><label for="background">Arrière-plan</label>
+            <select name="background" id="background">
+                <!-- options[value=$.jpg]{Arrière-plan $}*10 -->
+                <option value="1.jpg">Arrière-plan 1</option>
+                <option value="2.jpg">Arrière-plan 2</option>
+                <option value="3.jpg">Arrière-plan 3</option>
+                <option value="4.jpg">Arrière-plan 4</option>
+                <option value="5.jpg">Arrière-plan 5</option>
+                <option value="6.jpg">Arrière-plan 6</option>
+                <option value="7.jpg">Arrière-plan 7</option>
+                <option value="8.jpg">Arrière-plan 8</option>
+                <option value="9.jpg">Arrière-plan 9</option>
+                <option value="10.jpg">Arrière-plan 10</option>
+            </select>
+        </li>
+        <li>
+            <fieldset>
+                <legend>Genre</legend>
+                <div class="input-group"><label>
+                    <input type="radio" name="genre" value="f">
+                    <span>Femme</span>
+                </label>
+                    <label>
+                        <input type="radio" name="genre" value="h">
+                        <span>homme</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="genre" value="a">
+                        <span>autre</span>
+                    </label>
+                </div>
+            </fieldset>
+        </li>
+        <li>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email"
+                   placeholder="nom.prenom@miniform.com" required>
+        </li>
+
+        <li>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" required>
+        </li>
+        <li>
+            <label for="confirmation">confirmation</label>
+            <input type="password" name="confirmation" id="confirmation" required>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" name="connect">
+                <span>Rester connecté</span>
+            </label>
+        </li>
+        <li>
+            <button type="submit">Créer un compte</button>
+            <a href="#">Annuler</a>
+        </li>
+    </ul>
+</form>
 <script src="js/main.js"></script>
 </body>
 </html>
